@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: brown;
+        }
+    .cat {
+        width: 400px;
+        height: 200px;
+        background-image: url(imagens/walking_sprite.png);
+        background-repeat: no-repeat;
+        animation: walk-all 5s infinite;
+        /* animation-timing-function: steps(43); */
+    }
+
+    @keyframes walk-all {
+        0% { 
+            background-position: 0 0;
+            animation-timing-function: steps(12);
+        }
+        27.9% { 
+            background-position: 0 -2400px;
+        }
+        
+        /* Coluna 2 - 6 frames */
+        28% { 
+            background-position: -400px -1200px;
+            animation-timing-function: steps(6);
+        }
+        41.8% { 
+            background-position: -400px 0;
+        }
+        
+        /* Coluna 3 - 12 frames */
+        42% { 
+            background-position: -800px 0;
+            animation-timing-function: steps(12);
+        }
+        69.7% { 
+            background-position: -800px -2400px;
+        }
+        
+        /* Coluna 4 - 13 frames */
+        70% { 
+            background-position: -1200px 0;
+            animation-timing-function: steps(13);
+        }
+        100% { 
+            background-position: -1200px -2600px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="cat"></div>
+</body>
+</html>
