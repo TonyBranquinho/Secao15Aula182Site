@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    html {
+        background-color: rgb(174, 47, 47);
+    }
+    
+    .puma {
+        width: 430px;
+        height: 219.25px;
+        background-image: url(imagens/puma.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin: 20px;
+        transform: scaleX(-1);
+    }    
+
+    .puma-run {
+        animation: walk-col4 0.5s steps(4) infinite;
+    }
+
+    
+    @keyframes walk-col4 {
+        from { background-position: 0px 0; }
+        to { background-position: 0px -877px; }
+    }
+    .puma:hover {
+        transform: scaleX(1);
+    }
+
+</style>
+</head>
+<body>
+    
+    <div class="puma puma-run"></div>
+</body>
+</html>
