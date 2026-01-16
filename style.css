@@ -37,9 +37,6 @@ header img {
     transform-origin: right center;
     transition: all .2s ease-in-out;
 }
-/* .imgTipografia {
-    opacity: 1;
-} */
 .header_nav {
     width: 190px;
 }
@@ -173,3 +170,4 @@ header img:hover {
 .main_section_article_y img:hover {
     transform: scale(1.5);
 }
+
